@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: bisque;
+  background-image: linear-gradient(135deg, #faf3dd, #f9dbbd, #e9afa3);
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h3 {
+  position: absolute;
+  text-align: center;
+  top: 40%;
+  left: 6%;
+  transform: translate(-16%, -43%);
+  color: #08415c;
+  letter-spacing: 2.5px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 30px;
+}
+
+h1 {
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #ff007f;
+  font-family: monospace;
+  font-size: 5em;
+  letter-spacing: 5px;
+}
+
+h1::before {
+  content: '+';
+  position: absolute;
+  top: 100%;
+  left: 40.5%;
+  transform: translate(-100%, -55%);
+  font-size: 1em;
+}
+
+.vertical {
+  position: absolute;
+  width: 0;
+  font-size: 4.5em;
+  word-wrap: break-word;
+  color: #ff69b4;
+  font-family: monospace;
+  line-height: 0.75em;
+  text-shadow: 1.5px 1.5px 1.5px #777777;
+  animation: verticalBlinking 2s ease-in-out infinite;
+}
+
+.wife {
+  top: 63%;
+  left: 34.2%;
+  transform: translateY(-37.5%);
+}
+
+.mother {
+  top: 63%;
+  left: 40.5%;
+  transform: translateY(-22.5%);
+}
+
+.daughter {
+  top: 45.75%;
+  left: 43.75%;
+  transform: translateY(-100%);
+}
+
+.daughter::after {
+  content: 'R';
+  position: absolute;
+  top: 100%;
+  transform: translateY(100%);
+}
+
+.friend {
+  top: 45.75%;
+  left: 46.75%;
+  transform: translateY(-100%);
+}
+
+.friend::after {
+  content: 'D';
+  position: absolute;
+  top: 100%;
+  transform: translateY(100%);
+}
+
+.sister {
+  top: 62.5%;
+  left: 52.75%;
+  transform: translateY(-35%);
+}
+
+.sister::before {
+  content: 'SI';
+  position: absolute;
+  width: 0;
+  top: -35%;
+
+  transform: translateY(-100%);
+}
+
+@keyframes verticalBlinking {
+  0%,
+  100% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+blockquote {
+  position: absolute;
+  text-align: center;
+  top: 10%;
+  left: 5%;
+  transform: translate(-5%, -10%);
+  color: #283044;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5em;
+  letter-spacing: 2px;
+}
